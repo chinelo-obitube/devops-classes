@@ -3,9 +3,10 @@ version:
 phases:
   pre_build:
     commands:
-      - chmod +x build-image.sh push-image.sh
+      - chmod +x build-image.sh push-image.sh start-container.sh
       - ./build-image.sh
 
   build:
     commands:
       - ./push-image.sh
+      - ./start-container.sh
