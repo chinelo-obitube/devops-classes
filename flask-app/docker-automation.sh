@@ -7,7 +7,7 @@ set -eu
 sudo docker build -t flask-app .
 
 # login to your docker hub account
-cat /home/sw/gitrepos/devops-classes/flask-app/my_password.txt | sudo docker login --username wseyi --password-stdin
+cat ~/my_password.txt | sudo docker login --username wseyi --password-stdin
 
 # use the docker tag command to give the image a new name
 sudo docker tag flask-app wseyi/flaskapp
