@@ -22,7 +22,7 @@ jobs:
     
     - name: Build and push
       run: |
-          docker build . --file flask-app/Dockerfile 
-          docker tag flask-app wseyi/flaskapp
-          docker push wseyi/flaskapp
+          docker build . --file node-docker/Dockerfile 
+          docker tag flask-app wseyi/node-docker
+          docker push wseyi/node-docker
           
