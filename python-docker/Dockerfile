@@ -22,7 +22,7 @@ RUN adduser \
 
 
 RUN --mount=type=cache,target=/root/.cache/pip \
-    --mount=type=bind,source=requirements.txt,target=requirements.txt \
+    --mount=type=bind,source=python-docker/requirements.txt,target=requirements.txt \
     python -m pip install -r requirements.txt
 
 
