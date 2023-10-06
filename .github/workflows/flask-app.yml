@@ -23,6 +23,6 @@ jobs:
     - name: Build and push
       run: |
           docker build . --file flask-app/Dockerfile -t python
-          docker tag app wseyi/python
+          docker tag python wseyi/python
           docker push wseyi/python
           
