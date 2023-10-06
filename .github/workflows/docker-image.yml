@@ -22,7 +22,7 @@ jobs:
     
     - name: Build and push
       run: |
-          docker build . --file docker/Dockerfile -t app
-          docker tag app wseyi/docker-app
-          docker push wseyi/docker-app
+          docker build . --file python-docker/Dockerfile -t app
+          docker tag app wseyi/python-app
+          docker push wseyi/python-app
           
